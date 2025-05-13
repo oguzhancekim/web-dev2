@@ -6,9 +6,9 @@ body {
   
   form {
     background-color: #ffffff; /* Formun arka planı beyaz */
-    padding: 40px ; /* Form içeriği ile kenarlar arası boşluk */
+    padding: 100px ; /* Form içeriği ile kenarlar arası boşluk */
     border: 10px solid #f3ef00; /* Formun kenar çizgisi */
-    border-radius: 8px; /* Köşeleri yuvarlak yapar */
+    border-radius: 100px; /* Köşeleri yuvarlak yapar */
     max-width: 400px; /* Formun maksimum genişliği */
     margin: 15px; /* Sayfa ortasında gösterir */
    
