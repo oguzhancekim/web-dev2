@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!-- HTML5 belgesi -->
+<html lang="tr"> <!-- Dil Türkçe -->
+<head>
+  <meta charset="UTF-8"> <!-- Türkçe karakter desteği -->
+  <title>Form Sonuçları</title> <!-- Sekme başlığı -->
+  <button onclick="window.location.href='index.html'">Anasayfaya Dön</button>
+
+</head>
+<body>
+  <h1>Formdan Gelen Veriler</h1> <!-- Başlık -->
+  <!-- Tablo oluşturuluyor -->
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Ad</th> <!-- Sütun başlıkları -->
+        <th>Soyad</th>
+        <th>E-posta</th>
+        <th>Cinsiyet</th>
+        <th>Bölge</th>
+        <th>Yorum</th>
+      </tr>
+    </thead>
+    <tbody id="veriTablosu"> <!-- JavaScript ile satır eklenecek -->
+    </tbody>
+  </table>
+
+ 
+ <script>
+  // localStorage'tan veriyi al
+  const formData = JSON.parse(localStorage.getItem("formVerisi"));
+  // localStorage'da "formVerisi" anahtarında saklanan veriyi alır.
+  // Bu veri JSON formatındadır, bu yüzden parse edilerek JavaScript nesnesine çevrilir.
+
+  if (formData) {
+    // Eğer veri varsa (null değilse), işlemlere devam et.
+
+    const tablo = document.getElementById("veriTablosu");
+    // HTML'de id'si "veriTablosu" olan tablo (veya tbody) elemanını bulur.
+    // Genelde <table> içindeki <tbody id="veriTablosu"> gibi olur.
+
+    const satir = document.createElement("tr");
+    // Yeni bir tablo satırı (<tr>) oluşturur.
+
+    for (let i in formData) {
+      // formData nesnesinin her bir özelliğini (örneğin ad, soyad, email) dolaşır.
+
+      const hucre = document.createElement("td");
+      // Yeni bir tablo hücresi (<td>) oluşturur.
+
+      hucre.textContent = formData[i];
+      // Hücrenin içeriğini formData içindeki değere ayarlar.
+      // Örneğin formData["ad"] = "Ahmet" ise hücreye "Ahmet" yazılır.
+
+      satir.appendChild(hucre);
+      // Hücreyi satıra ekler (<tr> içine <td> eklenmiş olur).
+    }
+
+    tablo.appendChild(satir);
+    // Tüm hücreleri içeren satırı tabloya ekler.
+  }
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+body {
+    margin: 0; /* Varsayılan dış boşlukları sıfırlar */
+    padding: 0; /* İç boşlukları sıfırlar */
+    display: flex; /* Flexbox düzenini aktifleştirir */
+    justify-content: center; /* Yatayda ortalama */
+    align-items: center; /* Dikeyde ortalama */
+    min-height: 100vh; /* Sayfa yüksekliğini tam ekran yapar */
+    background-color: #f4f4f4; /* Arka plan rengi (isteğe bağlı) */
+}
+
+
+

@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, sans-serif; /* Yazı tipi ayarlanır */
+  background: #0b03f4;            /* Sayfa arka plan rengi açık gri */
+  text-align: center;             /* Tüm içerik ortalanır */
+  padding: 50px;                  /* Üstten, alttan boşluk bırakılır */
+}
+
+#game {
+  background: rgb(255, 225, 0);             /* Oyun kutusunun arka planı beyaz */
+  padding: 30px;                 /* İç boşluk */
+  border-radius: 10px;           /* Köşeleri yuvarlatılmış kutu */
+  box-shadow: 0 0 10px #000000;     /* Gölge efekti */
+  max-width: 400px;              /* Maksimum genişlik */
+  margin: auto;                  /* Ortaya yerleştirme */
+}
+
+input, button {
+  padding: 10px;     /* İç boşluk */
+  margin: 10px;      /* Dış boşluk */
+  width: 80%;        /* Genişlik kutuya göre %80 */
+}

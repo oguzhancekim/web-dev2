@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Türkiye Haritası</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Türkiye haritası resmi -->
+<!-- 'usemap' özelliği ile bu görselin tıklanabilir alanlarını belirtiriz -->
+<img src="resimler/haritaaaa.PNG" usemap="#image-map" alt="Türkiye Haritası">
+
+<!-- Tıklanabilir alanları tanımlayan image map -->
+<map name="image-map">
+
+    <!-- Erzurum: Daire alan, tıklandığında başka sayfaya gider -->
+    <area target="_blank" alt="Erzurum" title="Erzurum" href="erzurum.html" coords="1044,298,73" shape="circle">
+    <!-- target="_blank" sayfanın yeni sekmede açılmasını sağlar -->
+
+    <!-- Konya -->
+    <area target="_blank" alt="Konya" title="Konya" href="konya.html" coords="457,481,90" shape="circle">
+
+    <!-- Antalya -->
+    <area target="_blank" alt="Antalya" title="Antalya" href="antalya.html" 
+          coords="211,622,304,616,314,571,439,636,439,588,365,530,296,532,264,546" shape="poly">
+
+    <!-- Bursa -->
+    <area target="_blank" alt="Bursa" title="Bursa" href="bursa.html" 
+          coords="173,266,176,301,215,326,248,329,260,312,270,299,277,276,286,260,243,257,204,265" shape="poly">
+
+    <!-- İstanbul -->
+    <area target="_blank" alt="İstanbul" title="İstanbul" href="istanbul.html" 
+          coords="181,168,173,200,252,228,283,207" shape="poly">
+
+    <!-- Şanlıurfa -->
+    <area target="_blank" alt="Şanlıurfa" title="Şanlıurfa" href="şanlıurfa.html" 
+          coords="809,536,816,575,880,593,966,571,932,497,894,484" shape="poly">
+
+    <!-- Ankara -->
+    <area target="_blank" alt="Ankara" title="Ankara" href="ankara.html" 
+          coords="364,276,362,298,411,316,420,388,516,377,520,286,462,252,417,284" shape="poly">
+
+</map>
+
+
+<!-- Sayfa altına genel bağlantı butonları -->
+<div style="position: absolute; bottom: 20px; width: 100%; text-align: center;">
+    <a href="form.html"><button style="margin: 5px; padding: 10px 20px;">Öneriler</button></a>
+    <a href="hakkimizda.html"><button style="margin: 5px; padding: 10px 20px;">Hakkımızda</button></a>
+    <a href="sonuc.html"><button style="margin: 5px; padding: 10px 20px;">Form Sonuçları</button></a>
+    <a href="oyun.html"><button style="margin: 5px; padding: 10px 20px;">Oyun </button></a>
+  </div>
+  
+</body>
+</html>

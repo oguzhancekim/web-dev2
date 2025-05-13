@@ -1,0 +1,58 @@
+body {
+    background-color: #0028ef; /* Sayfanın arka planını açık mavi yapar */
+    font-family: Arial, sans-serif; /* Yazı tipini belirler */
+    padding: 20px; /* Sayfanın kenar boşlukları */
+  }
+  
+  form {
+    background-color: #ffffff; /* Formun arka planı beyaz */
+    padding: 40px ; /* Form içeriği ile kenarlar arası boşluk */
+    border: 10px solid #f3ef00; /* Formun kenar çizgisi */
+    border-radius: 8px; /* Köşeleri yuvarlak yapar */
+    max-width: 400px; /* Formun maksimum genişliği */
+    margin: 15px; /* Sayfa ortasında gösterir */
+   
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 100%; /* Genişliği form kadar yapar */
+    padding: 8px; /* İç boşluk */
+    margin: 8px 0; /* Üst-alt boşluk */
+    border: 1px solid #ccc; /* Kenar çizgisi */
+    border-radius: 4px; /* Köşeleri hafif yuvarlatır */
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px; /* Radyo butonu ile yazı arasında boşluk */
+  }
+  
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #007BFF; /* Mavi arka plan */
+    color: white; /* Yazı rengi */
+    padding: 10px 15px; /* Buton boyutu */
+    border: none; /* Kenar çizgisi yok */
+    border-radius: 4px; /* Köşeleri yuvarlak */
+    margin-top: 10px; /* Üst boşluk */
+    cursor: pointer; /* Fare üzerine gelince el simgesi */
+  }
+  
+  input[type="reset"] {
+    background-color: #dc3545; /* Kırmızı arka plan (sil tuşu için) */
+  }
+  
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    opacity: 0.9; /* Fare üstüne gelince hafif solukluk efekti */
+  }
+   button{
+    background-color: #007BFF; /* Mavi arka plan */
+    color: white; /* Yazı rengi */
+    padding: 10px 15px; /* Buton boyutu */
+    border: none; /* Kenar çizgisi yok */
+    border-radius: 4px; /* Köşeleri yuvarlak */
+    margin-top: 10px; /* Üst boşluk */
+    cursor: pointer; /* Fare üzerine gelince el simgesi */
+   }

@@ -1,0 +1,46 @@
+/* Sayfa genel ayarları */
+body {
+    background-color: #f2f3f6;  /* Sayfa arka planı: açık gri */
+    font-family: Arial, sans-serif;  /* Yazı tipi: Arial */
+    color: #333;  /* Yazı rengi: koyu gri */
+    padding: 20px;  /* Sayfa iç boşluğu (kenarlardan) */
+  }
+  
+  /* Ana başlık ayarı */
+  h1 {
+    color: rgb(8, 0, 255);  /* Başlık rengi: koyu mavi */
+    text-align: center;  /* Ortalanmış başlık */
+  }
+  
+  /* Alt başlıklar */
+  h2, h3 {
+    color: #3300ff;  /* Koyu mavi-yeşil ton */
+  }
+  
+  /* Şehir görseli ayarı */
+  .sehir-gorsel {
+    width: 100%;  /* Sayfanın tamamına sığsın */
+    max-width: 600px;  /* En fazla 600px genişlik */
+    display: block;  /* Satır blok olarak görünsün */
+    margin: 10px auto;  /* Üst-alt 10px, yatayda ortalı */
+    border: 3px solid #ccc;  /* Gri kenarlık */
+  }
+  
+  /* Beyaz kutu (liste içeriği için) */
+  .bilgi-kutu {
+    background-color: #efd10d;  /* Beyaz arka plan */
+    padding: 15px;  /* İç boşluk: her kenardan 15px */
+    border: 1px solid #0037fc;  /* İnce gri kenarlık */
+    margin-top: 20px;  /* Üst boşluk */
+    border-radius: 5px;  /* Köşeler biraz yuvarlatıldı */
+  }
+  
+  /* Liste içindeki elemanlar */
+  ul {
+    padding-left: 20px;  /* Madde başlarını biraz içe kaydırır */
+  }
+  
+  li {
+    margin-bottom: 8px;  /* Maddeler arasında boşluk */
+  }
+  

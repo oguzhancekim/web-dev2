@@ -1,0 +1,22 @@
+<!DOCTYPE html> <!-- HTML5 doctype bildirimi -->
+<html lang="tr"> <!-- Sayfanın dili Türkçe olarak ayarlanır -->
+<head>
+  <meta charset="UTF-8"> <!-- Türkçe karakterleri düzgün göstermek için -->
+  <title>Şehir Tahmin Oyunu</title> <!-- Sekmede görünecek başlık -->
+  <link rel="stylesheet" href="oyun.css"> <!-- Harici CSS dosyasına bağlantı -->
+</head>
+<body>
+
+  <div id="game"> <!-- Oyun kutusu -->
+    <h2>Hangi Şehir?</h2> <!-- Başlık -->
+    <p id="hint">Yükleniyor...</p> <!-- İpucu buraya yazılacak -->
+    <input type="text" id="guess" placeholder="Şehir ismini yaz..."> <!-- Kullanıcıdan şehir tahmini alır -->
+    <button onclick="checkGuess()">Tahmin Et</button> <!-- Butona basınca checkGuess() fonksiyonu çalışır -->
+    <button onclick="window.location.href='index.html'">Anasayfaya Dön</button>
+    <p id="result"></p> <!-- Tahmin sonucu burada gösterilecek -->
+    
+  </div>
+
+  <script src="oyun.js"></script> <!-- Harici JavaScript dosyasına bağlantı -->
+</body>
+</html>

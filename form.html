@@ -1,0 +1,47 @@
+<!DOCTYPE html> <!-- HTML5 belgesi olduğunu belirtir -->
+<html lang="tr"> <!-- Sayfanın dili Türkçe -->
+<head>
+  <meta charset="UTF-8"> <!-- Türkçe karakter desteği -->
+  <title>Öneri Formu</title> <!-- Sekmede gözükecek başlık -->
+  <link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+  <!-- Form etiketi: Kullanıcıdan bilgi almak için kullanılır -->
+  <form id="form"> <!-- Formun ID'si, JavaScript tarafından erişilmesi için -->
+    
+    AD: <input type="text" name="ad"><br> <!-- Ad için metin kutusu -->
+    SOYAD: <input type="text" name="soyad"><br> <!-- Soyad için metin kutusu -->
+    E-POSTA: <input type="email" name="email" required><br> <!-- Email girişi, zorunlu alan -->
+
+    <!-- Cinsiyet seçenekleri: Radio button ile tek seçim yapılabilir -->
+    CİNSİYET:<br>
+    <input type="radio" name="cinsiyet" value="ERKEK">ERKEK <br>
+    <input type="radio" name="cinsiyet" value="KADIN">KADIN <br>
+    <input type="radio" name="cinsiyet" value="BELİRSİZ">BELİRSİZ <br>
+
+    <!-- Seçim kutusu (dropdown) -->
+    Bölge Seçiniz: <br>
+    <select name="bolge">
+      <option value="Akdeniz Bölgesi">Akdeniz Bölgesi</option>
+      <option value="Karadeniz Bölgesi">Karadeniz Bölgesi</option>
+      <option value="Ege Bölgesi">Ege Bölgesi</option>
+      <option value="Marmara Bölgesi">Marmara Bölgesi</option>
+      <option value="İç Anadolu Bölgesi">İç Anadolu Bölgesi</option>
+      <option value="Doğu Anadolu Bölgesi">Doğu Anadolu Bölgesi</option>
+      <option value="Güneydoğu Anadolu Bölgesi">Güneydoğu Anadolu Bölgesi</option>
+    </select><br>
+    <!-- Yorum yazma alanı eklendi -->
+    <label for="yorum">Yorumunuz:</label><br>
+    <textarea id="yorum" name="yorum" rows="4" cols="40" placeholder="Yorumunuzu buraya yazın..."></textarea><br>
+
+    <!-- Gönderme ve temizleme butonları -->
+    <input type="submit" value="Gönder">
+    <input type="reset" value="Sil"><!-- Gönder tuşu --->
+    <button type="button" onclick="window.location.href='index.html'">Ana Sayfaya Dön</button>
+  </form>
+
+  <!-- JavaScript dosyasını bağlar -->
+  <script src="myscript.js"></script>
+</body>
+</html>
